@@ -36,9 +36,26 @@
                         Enjoy!
                     </p>
                 </dialog>
+                <div class="userInput">
+                    <label for="userName">Enter Your Name</label>
+                    <input type="text" id="userName" name="userName" required>
+                    <button id="startButton">Start</button>
+                </div>
+            </div>
+            <div id="gameArea" class="hidden">
+                <div id="question"></div>
+                <div id="answers"></div>
+            </div>
+            <div id="gameEnd" class="hidden">
+                <h3>Quiz Results</h3>
+                <p id="gameEndText"></p>
+                <p id="score"> Correct Answers: <span id="value">0</span></p>
+                <p id="incorrect">Incorrect Answers: <span>0</span></p>
+                <button id="playAgain">Play Again?</button>
             </div>
         </div>
     </main>
+    <footer>This Website was created for educational purposes</footer>
     <script src="./assets/js/script.js"></script>
 </body>
 
