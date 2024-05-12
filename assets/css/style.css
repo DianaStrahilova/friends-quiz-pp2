@@ -50,6 +50,7 @@ header span {
     background-color: blue;
 }
 
+/* Main styles */
 main {
     position: relative;
     border: 3px solid black;
@@ -63,4 +64,48 @@ main {
     width: 90%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
+}
+
+#game {
+    position: absolute;
+    border: 3px solid green;
+    top: 50%;
+    left: 40%;
+    transform: translate(-40%, -50%);
+    width: 65%;
+    height: 55%;
+}
+
+#openModal {
+    background-color: yellow;
+    box-shadow: inset;
+    padding: 2rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+    border-radius: 30px;
+
+}
+
+.instructions {
+    max-width: 400px;
+    position: fixed;
+    margin: auto;
+    border: 5px solid purple;
+    border-radius: 10px;
+    background-color: yellow;
+    overflow: auto;
+}
+
+.closeModal {
+    background-color: tomato;
+    float: right;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    border-radius: 2px;
+    margin: 1px;
+}
+
+.modal-content {
+    letter-spacing: 1px;
+    padding: 1rem;
 }
