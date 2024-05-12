@@ -76,6 +76,7 @@ main {
     height: 55%;
 }
 
+/* Modal styles */
 #openModal {
     background-color: yellow;
     box-shadow: inset;
@@ -108,4 +109,43 @@ main {
 .modal-content {
     letter-spacing: 1px;
     padding: 1rem;
+}
+
+/* User input */
+.userInput {
+    border: 2px solid yellow;
+    margin: 20px auto;
+    width: fit-content;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-color: rgba(D12ECC);
+    font-size: 18px;
+}
+
+#startButton,
+#playAgain {
+    font-size: 2rem;
+    padding: 10px;
+    background-color: blueviolet;
+    opacity: 0.9;
+    border-radius: 5px;
+    min-width: 50%;
+    cursor: pointer;
+}
+
+#playAgain {
+    margin-top: 5rem;
+}
+
+#startQuiz:hover,
+#playAgain:hover {
+    opacity: 1;
 }
