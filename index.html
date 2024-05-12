@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Meta tags for search engines -->
-    <meta name="descroption" content="Friends the Tv Show. Quiz. Questions.">
+    <meta name="description" content="Friends the Tv Show. Quiz. Questions.">
     <meta name="keywords" content="quiz, fiends, tv show, fun">
     <!-- <meta name="theme-color" content="#317feb"> -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Friends The Quiz</title>
 </head>
+
 <body>
     <header>
         <h1> F<span class="red"></span>R<span class="yellow"></span>I<span class="blue"></span>E<span
                 class="red"></span>N<span class="yellow"></span>D<span class="blue"></span>S</h1>
-                <h2>The Ultimate Quiz</h2>
+        <h2>The Ultimate Quiz</h2>
     </header>
     <main>
-        <img src="./assets/images/44df0b66-1815-4ea1-9503-ca01c85d4085.jpg" id="background" alt="a cartoon tv" height="800" width="800">
+        <img src="./assets/images/44df0b66-1815-4ea1-9503-ca01c85d4085.jpg" id="background" alt="a cartoon tv"
+            height="800" width="800">
+        <div id="game">
+            <div class="home">
+                <h2>Are you READY to PLAY?</h2>
+                <button id="openModal">How to play</button>
+                <dialog id="modal" class="instructions">
+                    <button class="closeModal">&times;</button>
+                    <p class="modal-content">
+                        Welcome to the "Friends" TV show quiz! Test your knowledge of this beloved sitcom by answering
+                        multiple-choice questions. Each question will have four options to choose from. Select the
+                        option you think is correct, and let's see how much you remember about Ross, Rachel, Chandler,
+                        Monica, Joey, and Phoebe!
+                        <br>
+                        Enjoy!
+                    </p>
+                </dialog>
+            </div>
+        </div>
     </main>
-    
+
 </body>
+
 </html>
