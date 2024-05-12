@@ -149,3 +149,40 @@ input[type=text] {
 #playAgain:hover {
     opacity: 1;
 }
+
+
+
+
+
+#question {
+    /* margin-top: 2rem;
+    margin-bottom: 3rem; */
+    font-size: 2rem;
+}
+
+.optionBtn {
+    display: block;
+    margin: auto;
+    min-width: 400px;
+    height: 4rem;
+    border-radius: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: white;
+}
+
+.optionBtn:hover {}
+
+.optionBtn:disabled {
+    background-color: white;
+    color: black;
+    border-color: black;
+    cursor: auto;
+    opacity: 1;
+}
+
+#answers {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
