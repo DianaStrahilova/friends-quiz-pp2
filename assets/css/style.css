@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+.hidden {
+    display: none;
+}
+
 /* General body styles*/
 body {
     font-family: 'Poppins', sans-serif;

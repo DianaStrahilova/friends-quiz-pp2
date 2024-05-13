@@ -7,14 +7,7 @@ const playAgain = document.getElementById('playAgain');
 const gameEnd = document.getElementById('gameEnd');
 const homeElement = document.querySelector('.home');
 
-// Button event listeners
-openModal.addEventListener('click', () => {
-    modal.showModal();
-})
 
-closeModal.addEventListener('click', () => {
-    modal.close();
-})
 
 playAgain.addEventListener('click', () => {
     gameEnd.classList.add('hidden');
@@ -25,6 +18,17 @@ playAgain.addEventListener('click', () => {
 startButton.addEventListener('click', () => {
     startQuiz();
 })
+
+// Button event listeners
+openModal.addEventListener('click', () => {
+    modal.showModal();
+})
+
+closeModal.addEventListener('click', () => {
+    modal.close();
+})
+
+
 
 // Questions array
 const questions = [
@@ -92,7 +96,7 @@ const gameArea = document.getElementById('gameArea');
 const optionsElement = [
     document.getElementById('answer0'),
     document.getElementById('answer1'),
-    document.getElementById('answer3'),
+    document.getElementById('answer2'),
     document.getElementById('answer3')
 ];
 
@@ -108,7 +112,7 @@ function startQuiz() {
     incorrectAnswers = 0;
 
     scoreValue.innerHTML = 0;
-    incorrectAnswers.innerHTML = 0;
+    incorrectAnswersElement.innerHTML = 0;
 
     homeElement.classList.add('hidden');
     gameArea.classList.remove('hidden');
@@ -117,10 +121,10 @@ function startQuiz() {
 }
 
 function loadQuestion() {
-    if (currentQuestionIndex >= questions.lenght) {
+    if (currentQuestionIndex >= questions.length) {
         gameArea.classList.add('hidden');
         gameEnd.classList.remove('hidden');
-        document.getElementById('gameEndText').innerHTML = `Congratulations <span>{userName}</span>! You completed the quiz!`;
+        document.getElementById('gameEndText').innerHTML = `Congratulations <span>${userName}</span>! You completed the quiz!`;
         return;
     }
 
@@ -146,7 +150,7 @@ function checkAnswer(button) {
     const answerIndex = questions[currentQuestionIndex].options.indexOf(answer);
 
     //Lock buttons
-    document.querySelectorAll('optionBtn').forEach(button => {
+    document.querySelectorAll('.optionBtn').forEach(button => {
         button.disabled = true;
     });
 
