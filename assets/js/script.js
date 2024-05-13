@@ -2,6 +2,10 @@
 const modal = document.getElementById('modal');
 const openModal = document.getElementById('openModal');
 const closeModal = document.querySelector('.closeModal');
+const startButton = document.getElementById('startButton');
+const playAgain = document.getElementById('playAgain');
+const gameEnd = document.getElementById('gameEnd');
+const homeElement = document.querySelector('.home');
 
 // Button event listeners
 openModal.addEventListener('click', () => {
@@ -78,10 +82,7 @@ const questions = [
 
 
 // DOM elements 
-const startButton = document.getElementById('startButton');
-const playAgain = document.getElementById('playAgain');
-const gameEnd = document.getElementById('gameEnd');
-const homeElement = document.querySelector('.home');
+
 const questionElement = document.getElementById('question');
 const answersElement = document.getElementById('answers');
 const scoreValue = document.getElementById('value');
@@ -147,7 +148,28 @@ function checkAnswer(button) {
     //Lock buttons
     document.querySelectorAll('optionBtn').forEach(button => {
         button.disabled = true;
-    })
+    });
+
+    if (answerIndex === questions[currentQuestionIndex].correctAnswer) {
+        score++;
+        scoreValue.innerHTML = score;
+        button.classList.add('correctAnswer');
+    } else {
+        button.classList.add('incorrectAnswer');
+        incorrectAnswers++;
+        incorrectAnswersElement.innerHTML = incorrectAnswers;
+
+        document.querySelectorAll('.optionBtn').forEach(button=> {
+            if (button.textContent === questions[currentQuestionIndex].options[questions[currentQuestionIndex].correctAnswer]) {
+                button.classList.add('correctAnswer');
+            }
+        });
+    }
+
+    setTimeout (() => {
+        currentQuestionIndex++;
+        loadQuestion();
+    }, 2000);
 }
 
 
