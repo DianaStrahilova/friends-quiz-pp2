@@ -3,11 +3,6 @@ const modal = document.getElementById('modal');
 const openModal = document.getElementById('openModal');
 const closeModal = document.querySelector('.closeModal');
 
-const startButton = document.getElementById('startButton');
-const playAgain = document.getElementById('playAgain');
-const gameEnd = document.getElementById('gameEnd');
-const homeElement = document.querySelector('.home');
-
 // Button event listeners
 openModal.addEventListener('click', () => {
     modal.showModal();
@@ -27,7 +22,7 @@ startButton.addEventListener('click', () => {
     startQuiz();
 })
 
-
+// Questions array
 const questions = [
     {
         question: "What is the name of Ross’s second wife?",
@@ -80,4 +75,41 @@ const questions = [
         correctAnswer: 2
     }
 ]
+
+
+// DOM elements 
+const startButton = document.getElementById('startButton');
+const playAgain = document.getElementById('playAgain');
+const gameEnd = document.getElementById('gameEnd');
+const homeElement = document.querySelector('.home');
+const questionElement = document.getElementById('question');
+const answersElement = document.getElementById('answers');
+const scoreValue = document.getElementById('value');
+const incorrectAnswersElement = document.querySelector('#incorrect span');
+const gameArea = document.getElementById('gameArea');
+
+const optionsElement = [
+    document.getElementById('answer0'),
+    document.getElementById('answer1'),
+    document.getElementById('answer3'),
+    document.getElementById('answer3')
+];
+
+let userName = '';
+let currentQuestionIndex = 0;
+let score = 0;
+let incorrectAnswers = 0;
+
+function startQuiz() {
+    userName = document.getElementById('userName').value;
+    currentQuestionIndex = 0;
+    score = 0;
+    incorrectAnswers = 0;
+
+    scoreValue.innerHTML = 0;
+    incorrectAnswers.innerHTML = 0;
+
+    homeElement
+}
+
 
