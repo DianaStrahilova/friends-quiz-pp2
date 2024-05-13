@@ -7,7 +7,7 @@
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 /* General body styles*/
@@ -222,5 +222,51 @@ input[type=text] {
     }
     100% {
         background-color: rgb(243, 100, 100);
+    }
+}
+
+#gameArea {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-between;
+}
+
+#gameEnd h3 {
+    font-size: 3rem;
+}
+
+#gameEndText {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+} 
+
+#gameEndText span {
+    font-weight: bold;
+}
+
+#score,
+#incorrect {
+    font-size: 1.5rem;
+}
+
+#value,
+#incorrect span {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 100%;
+    }
+
+    #background {
+        width: 100%;
     }
 }
