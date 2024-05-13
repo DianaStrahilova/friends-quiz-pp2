@@ -1,13 +1,14 @@
 // Modal
-const modal = document.getElementById("modal");
-const openModal = document.getElementById("openModal");
+const modal = document.getElementById('modal');
+const openModal = document.getElementById('openModal');
 const closeModal = document.querySelector('.closeModal');
 
-const startButton = document.getElementById("startButton");
-const playAgain = document.getElementById("playAgain");
+const startButton = document.getElementById('startButton');
+const playAgain = document.getElementById('playAgain');
 const gameEnd = document.getElementById('gameEnd');
 const homeElement = document.querySelector('.home');
 
+// Button event listeners
 openModal.addEventListener('click', () => {
     modal.showModal();
 })
