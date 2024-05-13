@@ -109,7 +109,45 @@ function startQuiz() {
     scoreValue.innerHTML = 0;
     incorrectAnswers.innerHTML = 0;
 
-    homeElement
+    homeElement.classList.add('hidden');
+    gameArea.classList.remove('hidden');
+
+    loadQuestion();
+}
+
+function loadQuestion() {
+    if (currentQuestionIndex >= questions.lenght) {
+        gameArea.classList.add('hidden');
+        gameEnd.classList.remove('hidden');
+        document.getElementById('gameEndText').innerHTML = `Congratulations <span>{userName}</span>! You completed the quiz!`;
+        return;
+    }
+
+    answersElement.innerHTML = '';
+
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+    questionElement.innerHTML = questionNo + '.' + currentQuestion.question;
+
+    currentQuestion.options.forEach(answer => {
+        const button = document.createElement('button');
+        button.innerHTML = answer;
+        button.classList.add('optionBtn');
+        button.addEventListener('click', () => {
+            checkAnswer(button);
+        });
+        answersElement.appendChild(button);
+    });
+}
+
+function checkAnswer(button) {
+    const answer = button.innerHTML;
+    const answerIndex = questions[currentQuestionIndex].options.indexOf(answer);
+
+    //Lock buttons
+    document.querySelectorAll('optionBtn').forEach(button => {
+        button.disabled = true;
+    })
 }
 
 
