@@ -2,24 +2,23 @@
 const modal = document.getElementById('modal');
 const openModal = document.getElementById('openModal');
 const closeModal = document.querySelector('.closeModal');
+
+//Game buttons
 const startButton = document.getElementById('startButton');
 const playAgain = document.getElementById('playAgain');
 const gameEnd = document.getElementById('gameEnd');
 const homeElement = document.querySelector('.home');
 
 
-
+// Event listeners
 playAgain.addEventListener('click', () => {
     gameEnd.classList.add('hidden');
     homeElement.classList.remove('hidden');
     document.getElementById('userName').value = '';
 });
-
 startButton.addEventListener('click', () => {
     startQuiz();
 })
-
-// Button event listeners
 openModal.addEventListener('click', () => {
     modal.showModal();
 })
@@ -86,7 +85,6 @@ const questions = [
 
 
 // DOM elements 
-
 const questionElement = document.getElementById('question');
 const answersElement = document.getElementById('answers');
 const scoreValue = document.getElementById('value');

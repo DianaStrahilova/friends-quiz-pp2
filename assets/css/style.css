@@ -66,7 +66,6 @@ main {
 
 #background {
     width: 90%;
-    background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
 }
 
@@ -105,7 +104,7 @@ main {
     background-color: tomato;
     float: right;
     font-size: 1.5rem;
-    padding: 0.3rem;
+    padding: 0.5rem;
     border-radius: 2px;
     margin: 1px;
 }
@@ -129,6 +128,7 @@ main {
 input[type=text] {
     width: 100%;
     padding: 12px 20px;
+    margin: 8px 0;
     box-sizing: border-box;
     background-color: rgba(D12ECC);
     font-size: 18px;
@@ -189,4 +189,38 @@ input[type=text] {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+.correctAnswer,
+.incorrectAnswer {
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.correctAnswer {
+    animation-name: correctAnswer;
+}
+
+.incorrectAnswer {
+    animation-name: incorrectAnswer;
+}
+
+@keyframes correctAnswer {
+    0% {
+        background-color: white;
+    }
+    100% {
+        background-color: rgb(100, 243, 100);
+    }
+}
+
+@keyframes incorrectAnswer {
+    0% {
+        background-color: white;
+    }
+    100% {
+        background-color: rgb(243, 100, 100);
+    }
 }
