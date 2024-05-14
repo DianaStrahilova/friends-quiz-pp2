@@ -188,6 +188,7 @@ input[type=text] {
 
 .optionBtn {
     display: block;
+    color: black;
     margin: auto;
     min-width: 400px;
     height: 3rem;
@@ -373,6 +374,7 @@ input[type=text] {
 
    .optionBtn {
    min-width: 90vw;
+   font-size: 1.5rem;
 
    }
 }
