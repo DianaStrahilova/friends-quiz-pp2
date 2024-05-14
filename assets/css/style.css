@@ -83,7 +83,7 @@ main {
     left: 44%;
     transform: translate(-40%, -50%);
     width: 60%;
-    height: 55%;
+    height: 70%;
     background-color: rgba(219, 219, 247, 0.8);
 }
 
@@ -95,7 +95,6 @@ main {
 /* Modal styles */
 #openModal {
     background-color: yellow;
-    box-shadow: inset;
     padding: 1rem;
     font-size: 1.5rem;
     margin-top: 1rem;
@@ -145,7 +144,6 @@ input[type=text] {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    background-color: rgba(D12ECC);
     font-size: 18px;
 }
 
@@ -180,12 +178,12 @@ input[type=text] {
 
 #startButton:hover,
 #playAgain:hover {
-    opacity: 3;
+    opacity: 1;
 }
 
 #question {
     font-size: 2rem;
-    padding: 1rem;
+    padding: 2px;
 }
 
 .optionBtn {
@@ -281,7 +279,7 @@ input[type=text] {
 
 @media only screen and (max-width: 1440px) {
     #question {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-top: 1rem;
     }
 
@@ -364,9 +362,18 @@ input[type=text] {
 
 }
 
-@media only screen and (min-width: 430px) {
-   header {
-    font-size: 1rem;
+@media only screen and (max-width: 422px) {
+   body {
+    width: 100vw;
+   }
+
+   h1 {
+    font-size: 2.6rem;
+   }
+
+   .optionBtn {
+   min-width: 90vw;
+
    }
 }
     
