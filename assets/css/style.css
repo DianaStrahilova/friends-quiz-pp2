@@ -25,6 +25,11 @@ footer {
     background-color: rgba(219, 219, 247, 0.8);
 }
 
+footer {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
 /* Logo styles */
 h1 {
     font-family: 'Shadows Into Light', sans-serif;
@@ -35,6 +40,7 @@ h2 {
     font-size: 2rem;
     font-style: italic;
     padding-bottom: 1rem;
+
 }
 
 header span {
@@ -61,32 +67,41 @@ main {
     border-radius: 15px;
     text-align: center;
     margin: 20px auto;
-    width: 50vw;
+    height: fit-content;
+    width: fit-content;
 }
 
 #background {
-    width: 90%;
-    z-index: -1;
+    width: 100%;
+    border-radius: 15px;
 }
 
 #game {
     position: absolute;
-    border: 3px solid green;
+    border-radius: 20px;
     top: 50%;
-    left: 40%;
+    left: 44%;
     transform: translate(-40%, -50%);
-    width: 65%;
+    width: 60%;
     height: 55%;
+    background-color: rgba(219, 219, 247, 0.8);
+}
+
+.home h2 {
+    font-family: 'Shadows Into Light';
+    margin-top: 1.5rem;
 }
 
 /* Modal styles */
 #openModal {
     background-color: yellow;
     box-shadow: inset;
-    padding: 2rem;
-    font-size: 2rem;
-    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
     border-radius: 30px;
+    cursor: pointer;
+    width: 30%;
 
 }
 
@@ -116,13 +131,13 @@ main {
 
 /* User input */
 .userInput {
-    border: 2px solid yellow;
     margin: 20px auto;
     width: fit-content;
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Shadows Into Light', sans-serif;
 }
 
 input[type=text] {
@@ -141,41 +156,48 @@ input[type=text] {
     background-color: blueviolet;
     opacity: 0.9;
     border-radius: 5px;
-    min-width: 50%;
+    min-width: 60%;
     cursor: pointer;
+}
+
+#social-media {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-media i {
+    font-size: 160%;
+    padding: 5%;
+    color: black;
 }
 
 #playAgain {
     margin-top: 5rem;
 }
 
-#startQuiz:hover,
+#startButton:hover,
 #playAgain:hover {
-    opacity: 1;
+    opacity: 3;
 }
 
-
-
-
-
 #question {
-    /* margin-top: 2rem;
-    margin-bottom: 3rem; */
     font-size: 2rem;
+    padding: 1rem;
 }
 
 .optionBtn {
     display: block;
     margin: auto;
     min-width: 400px;
-    height: 4rem;
+    height: 3rem;
     border-radius: 10px;
     font-size: 2rem;
     cursor: pointer;
     background-color: white;
 }
-
-.optionBtn:hover {}
 
 .optionBtn:disabled {
     background-color: white;
@@ -211,6 +233,7 @@ input[type=text] {
     0% {
         background-color: white;
     }
+
     100% {
         background-color: rgb(100, 243, 100);
     }
@@ -220,6 +243,7 @@ input[type=text] {
     0% {
         background-color: white;
     }
+
     100% {
         background-color: rgb(243, 100, 100);
     }
@@ -239,7 +263,7 @@ input[type=text] {
 #gameEndText {
     font-size: 2rem;
     margin-bottom: 5rem;
-} 
+}
 
 #gameEndText span {
     font-weight: bold;
@@ -255,18 +279,94 @@ input[type=text] {
     font-weight: bold;
 }
 
-@media screen and (max-width: 1024px) {
-    main {
-        width: 80vw;
+@media only screen and (max-width: 1440px) {
+    #question {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    #answers {
+        gap: 2rem;
+    }
+
+    #gameEndText {
+        margin-bottom: 1rem;
     }
 }
 
-@media screen and (max-width: 768px) {
-    main {
-        width: 100%;
-    }
-
+@media only screen and (max-width: 768px) {
     #background {
+        display: none;
+    }
+
+    body {
+        background-image: url(/assets/images/background2.webp);
+        background-size: cover;
+    }
+
+    main {
         width: 100%;
     }
+
+    #openModal {
+        width: 60%;
+    }
+
+    #game {
+        background-color: transparent;
+        top: 50%;
+        left: 35%;
+        transform: translate(-35%, -50%);
+        width: 72%;
+        height: 55%;
+    }
+
+    #game h2,
+    .userInput {
+        background-color: rgba(219, 219, 247, 0.8);
+        border-radius: 15px;
+        border: 2px solid purple;
+    }
+
+    #question {
+        background-color: rgba(219, 219, 247, 0.8);
+        margin-bottom: 1rem;
+    }
+
+    #game {
+        position: static;
+        transform: translate(0, 0);
+        width: 100%;
+        height: 100%;
+        /* background-color: rgba(219, 219, 247, 0.8); */
+        padding: 1rem;
+
+    }
+
+    .optionBtn {
+        background-color: white;
+    }
+
+    #answers {
+        min-width: 100px;
+    }
+
+    #gameEnd {
+        background-color: rgba(219, 219, 247, 0.8);
+        border-radius: 40px;
+        font-family: 'Shadows Into Light', sans-serif;
+    }
+
+    footer p {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    }
+
 }
+
+@media only screen and (min-width: 430px) {
+   header {
+    font-size: 1rem;
+   }
+}
+    

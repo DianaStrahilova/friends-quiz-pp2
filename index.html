@@ -23,12 +23,11 @@
         <h2>The Ultimate Quiz</h2>
     </header>
     <main>
-        <img src='./assets/images/tv.png' id="background" alt="a cartoon tv"
-         height="800" width="800">
+        <img src='./assets/images/friends.webp' id="background" alt="a cartoon tv" width="800px" height="800px">
         <div id="game">
             <div class="home">
                 <h2>Are you READY to PLAY?</h2>
-                <button id="openModal">How to play</button>
+                <button id="openModal">Instructions</button>
                 <dialog id="modal" class="instructions">
                     <button class="closeModal">&times;</button>
                     <p class="modal-content">
@@ -41,9 +40,9 @@
                     </p>
                 </dialog>
                 <div class="userInput">
-                    <label for="userName">Enter Your Name:</label>
-                    <input type="text" id="userName" name="userName", required>
-                    <button id="startButton">Start</button>
+                        <label for="userName">Enter Your Name:</label>
+                        <input type="text" id="userName" name="userName", required>
+                        <button id="startButton">Let's GO!</button>
                 </div>
             </div>
             <div id="gameArea" class="hidden">
@@ -59,7 +58,23 @@
             </div>
         </div>
     </main>
-    <footer>This Website was created for educational purposes</footer>
+    <footer>
+        <p>This Website was created for educational purposes</p>
+        <br>
+        <ul id="social-media">
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="Visit out Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram  page (opens in a new tab)"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our YouTube channel (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+        </ul>
+        <br>
+    </footer>
     <script src="./assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/7e0df870a4.js" crossorigin="anonymous"></script>
 </body>
