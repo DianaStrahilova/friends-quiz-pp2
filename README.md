@@ -27,7 +27,7 @@ The design of the website is simple, fun and engaging. The user can start the qu
 
    1. Intuitive to navigate.
    2. Engaging.
-   3. Inviting for action.
+   3. Inviting.
 
 ### Design 
 ___
@@ -100,18 +100,20 @@ Desktop score
    - No errors were returned when passing through the official [W3C Validator.](https://validator.w3.org/)
 
 index.html
-![](./assets/readme-images/homev.png)
+![](./assets/readme-images/htmlv.png)
 
-about.html
-![](./assets/readme-images/aboutv.png)
-
-signup.html
-![](./assets/readme-images/signupv.png)
 
 - CSS
   - No errors were found when passing throught the official [(Jigsaw) Validator](https://jigsaw.w3.org/css-validator/)
+
 style.css
-![](./assets/readme-images/cssv.png)
+![](./assets/readme-images/css.png)
+
+- JavaScript
+   - No errors were returned when passing through [JSHint Validator](https://jshint.com/)
+
+script.js
+![](./assets/readme-images/js.png)
 
 - Accesibility 
    - Colors and fonts are easy to read and accesible by running it through Lighthouse in Devtools device toolbar.
