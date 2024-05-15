@@ -118,15 +118,11 @@ script.js
 - Accesibility 
    - Colors and fonts are easy to read and accesible by running it through Lighthouse in Devtools device toolbar.
 
-Home Page 
-![](./assets/readme-images/homel.png)
+Desktop
+![](./assets/readme-images/desktopv.png)
 
-About Page 
-![](./assets/readme-images/aboutl.png)
-
-Sign Up 
-![](./assets/readme-images/signupl.png)
-
+Mobile
+![](./assets/readme-images/mobilev.png)
 
 
 ---
@@ -138,24 +134,22 @@ The website was deployed to GitHub Pages. The steps are as follows.
    4. Select save.
    5. Wait a couple of minutes for the website to go live.
 
- Link to the live website [here](https://dianastrahilova.github.io/moonexpeditionpp1/index.html)
+ Link to the live website [here](https://dianastrahilova.github.io/friends-quiz-pp2/)
 ---
 
-### Reference and Credits 
-**References**
-
-   1. Code Institute Learning Modules.
-   2. [Flexbox Froggy](https://flexboxfroggy.com/)
-   3. The header and navbar menu was insipired by [Love Running Project](https://code-institute-org.github.io/love-running-2.0/index.html)
-   4. More CSS exercises [W3schools](https://www.w3schools.com/)
+### Technologies Used 
+#### Languages Used
+   - HTML
+   - CSS
+   - JavaScript
 <br>
 
 ### Content and Media
 The content and media were taken from the followig resources:
-   - Five out of the six images were AI generated from [Wowzer](https://app.wowzer.ai/).
-   - The text content was created by [ChatGpt](https://chat.openai.com/), following my instructions.
-   - Image of Moon's surface with Earth in the distance was downloaded from [Pexels](https://www.pexels.com/).
+   - The images were donwloaded from [Pinterest](https://www.pinterest.de/pin/707417053995815680/).
+   - The modal idea from [YouTube Kevin Powell](https://www.youtube.com/watch?v=TAB_v6yBXIE&t=372s).
+   - Resizing images [TinyPNG](https://tinypng.com/).
    - The Social Media Icons and the Triple Bar icon were downloaded from [Font Awesome](https://fontawesome.com/).
-   - Google Fonts was used to define the fonts in the stylesheet. [Google Fonts](https://fonts.google.com/).
-   - Colors used were simple black, white, purple and grey.
-   - Favicon was AI generated from [Wowzer](https://app.wowzer.ai/) and converted into a Favicon with [Favicon Generator](https://favicon.io/favicon-converter/).
+   - Google Fonts was used to define the fonts in the stylesheet [Google Fonts](https://fonts.google.com/).
+   - To troubleshoot and test features, solve issues with responsiveness and styling [Google Developer Tools](https://developer.chrome.com/docs/).
+   - To cut and resize audio file [Mp3Cut](https://mp3cut.net/).
