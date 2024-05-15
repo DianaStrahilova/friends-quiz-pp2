@@ -391,6 +391,7 @@ audio::-webkit-media-controls-play-button,
    .optionBtn {
    min-width: 90vw;
    font-size: 1.5rem;
+   height: fit-content;
 
    }
 

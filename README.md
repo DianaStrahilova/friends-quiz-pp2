@@ -29,29 +29,34 @@ The design of the website is simple, fun and engaging. The user can start the qu
    2. Engaging.
    3. Inviting for action.
 
-### Features
+### Design 
 ___
-**The Start Area:**
+ **Start Area**
+
+ The start area is displays the Friends Logo inside the header. Followed by the main content: a challeging heading "Are you READY to PLAY?", a pop up modal with instructions, an input field for the user's name and a start button.There is also a background image containing a collage of images with all the characters from Friends. It changes to a different one on smaller devices. The footer contains a snippet with the theme song and social media icons. 
+
   Desktop
   ![](./assets/readme-images/main.png)
 
+  Desktop Footer
+  ![](./assets/readme-images/footerdesktop.png)
+
   Mobile 
 
-  <img src="./assets/readme-images/mainmobile.png" width="214" height="66">
+  <img src="./assets/readme-images/mainmobile.png" width="344" height="882">
+
+  Mobile Footer
+
+  <img src="./assets/readme-images/footermobile.png">
+
 
 
 
   
 ___
-**Main Content**
+**Quiz Area**
 
-The main combines engaging information and invites for action.
-
-The first part of the main is a welcome message inviting visitors to join into the unknown. Along with all the reasons why and captivating images and a map location of  the office.
-
-The second part is About. It contents more detailed information about the expedition. What to expect and what it includes. Followed by more images.
-
-The third part is a Sign Up and a Medical information form, inviting the visitor to take action and join the expedition. 
+For each question there are 4 options to choose from. Once a choice is made, the buttons lock, preventing the user from making more choices.
 
 **Home Page**
 Desktop
