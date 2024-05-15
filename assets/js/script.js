@@ -90,6 +90,8 @@ const answersElement = document.getElementById('answers');
 const scoreValue = document.getElementById('value');
 const incorrectAnswersElement = document.querySelector('#incorrect span');
 const gameArea = document.getElementById('gameArea');
+const NewHighScore = document.getElementById('newHighScore');
+const scoreEndGame = document.querySelector('#scoreText span');
 
 const optionsElement = [
     document.getElementById('answer0'),
@@ -102,9 +104,15 @@ let userName = '';
 let currentQuestionIndex = 0;
 let score = 0;
 let incorrectAnswers = 0;
+let highScore = localStorage.getItem('highScore'); //load highscore from local storage
 
 function startQuiz() {
     userName = document.getElementById('userName').value;
+
+    //Check if username field is empty
+    if (!userName)
+        return alert ('Please enter a username!'); //show alert message
+
     currentQuestionIndex = 0;
     score = 0;
     incorrectAnswers = 0;
@@ -114,6 +122,7 @@ function startQuiz() {
 
     homeElement.classList.add('hidden');
     gameArea.classList.remove('hidden');
+    NewHighScore.classList.add('hidden');
 
     loadQuestion();
 }
@@ -122,7 +131,15 @@ function loadQuestion() {
     if (currentQuestionIndex >= questions.length) {
         gameArea.classList.add('hidden');
         gameEnd.classList.remove('hidden');
-        document.getElementById('gameEndText').innerHTML = `Congratulations <span>${userName}</span>! You completed the quiz!`;
+        document.getElementById('gameEndText').innerHTML = `Congratulations, <span>${userName}</span>! You completed the quiz!`;
+        scoreEndGame.textContent = score;
+
+        if (score > highScore) {
+            //update new high score in local storage
+            localStorage.setItem('highScore', score);
+            //show 'new high score' text
+            NewHighScore.classList.remove('hidden');
+        }
         return;
     }
 
