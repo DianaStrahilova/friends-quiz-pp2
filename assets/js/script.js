@@ -126,7 +126,8 @@ function startQuiz() {
 
     loadQuestion();
 }
-// Load the questions and hide the start area when Start Button is clicked
+// Load the questions 
+//Return a message to the user at the end of the quiz, depending on their score
 function loadQuestion() {
     if (currentQuestionIndex >= questions.length) {
         gameArea.classList.add('hidden');
@@ -184,7 +185,7 @@ function checkAnswer(button) {
             }
         });
     }
-    
+    //Load next question after the timer expires
     setTimeout (() => {
         currentQuestionIndex++;
         loadQuestion();
