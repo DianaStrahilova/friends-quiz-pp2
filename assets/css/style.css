@@ -328,9 +328,10 @@ audio::-webkit-media-controls-play-button,
         background-color: transparent;
         top: 50%;
         left: 35%;
-        transform: translate(-35%, -50%);
-        width: 72%;
+        transform: translate(-35%, -50%); 
+        width: 75%;
         height: 55%;
+        margin-left: ;
     }
 
     #game h2,
@@ -338,6 +339,10 @@ audio::-webkit-media-controls-play-button,
         background-color: rgba(219, 219, 247, 0.8);
         border-radius: 15px;
         border: 2px solid purple;
+    }
+
+    #game h2 {
+       padding: 0.5rem 0;
     }
 
     #question {
@@ -350,7 +355,6 @@ audio::-webkit-media-controls-play-button,
         transform: translate(0, 0);
         width: 100%;
         height: 100%;
-        /* background-color: rgba(219, 219, 247, 0.8); */
         padding: 1rem;
 
     }
@@ -371,15 +375,14 @@ audio::-webkit-media-controls-play-button,
 
     footer p {
         font-size: 1.5rem;
-        padding-top: 1rem;
     }
 
 }
 
 @media only screen and (max-width: 422px) {
-   body {
+   /* body {
     width: 100vw;
-   }
+   } */
 
    h1 {
     font-size: 2.6rem;
@@ -389,6 +392,13 @@ audio::-webkit-media-controls-play-button,
    min-width: 90vw;
    font-size: 1.5rem;
 
+   }
+
+   audio {
+    width: 50%;
+   }
+   .quote {
+    font-size: 1.6rem;
    }
 }
     
