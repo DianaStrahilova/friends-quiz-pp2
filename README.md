@@ -21,7 +21,7 @@ The quiz targets anyone who has ever watched the show to test their knowledge, w
 
 #### User Expectations
 
-The design of the website is simple, fun and engaging. The user can start the quiz straight away by entering their name and hitting the start button. The questions then are immediately displayed and after choosing an option, and if the option is wrong, the right answer highlight in green and the next question loads. The user is notified of their score at the end of the quiz. The quiz has a local storage set up and the user will also be notified if they have a new higher score.
+The design of the website is simple, fun and engaging. The user can start the quiz straight away by entering their name and hitting the start button.
    
 ### Website Structure
 
@@ -76,7 +76,7 @@ Mobile Quiz
 
 **Score**
 
-The score is displayed at the end of the game and displays a message with the users's name the number of correct and incorrect answers. Also alerts if there is a new high score.
+The score is displayed at the end of the game and displays a message with the users's name the number of correct/incorrect answers. Also alerts if there is a new high score.
 
 Desktop score 
 
