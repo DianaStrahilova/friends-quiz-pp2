@@ -63,7 +63,6 @@ header span {
 /* Main styles */
 main {
     position: relative;
-    border: 3px solid black;
     border-radius: 15px;
     text-align: center;
     margin: 20px auto;
@@ -80,8 +79,8 @@ main {
     position: absolute;
     border-radius: 20px;
     top: 50%;
-    left: 44%;
-    transform: translate(-40%, -50%);
+    left: 45%;
+    transform: translate(-44%, -50%);
     width: 60%;
     height: 70%;
     background-color: rgba(219, 219, 247, 0.8);
@@ -158,19 +157,30 @@ input[type=text] {
     cursor: pointer;
 }
 
+audio::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel {
+     background-color: yellow;
+     color: #000;
+     }
+
+.quote {
+    font-family: 'Shadows Into Light', sans-serif;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
 #social-media {
-    text-align: center;
-    padding: 20px 0;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: center;
     list-style-type: none;
 }
 
-#social-media i {
-    font-size: 160%;
-    padding: 5%;
+ #social-media i {
     color: black;
-}
+    font-size: 3rem;
+    padding: 0.5rem;
+} 
 
 #playAgain {
     margin-top: 5rem;

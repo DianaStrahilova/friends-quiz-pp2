@@ -23,7 +23,7 @@
         <h2>The Ultimate Quiz</h2>
     </header>
     <main rel="preconnect">
-        <img src='./assets/images/friends.webp' id="background" alt="a cartoon tv" width="600" height="600px">
+        <img src='./assets/images/friends.webp' id="background" alt="Friends Collage Images" width="600" height="600px">
         <div id="game">
             <div class="home">
                 <h2>Are you READY to PLAY?</h2>
@@ -41,7 +41,7 @@
                 </dialog>
                 <div class="userInput">
                         <label for="userName">Enter Your Name:</label>
-                        <input type="text" id="userName" name="userName", required>
+                        <input type="text" id="userName" name="userName", placeholder="Miss Chanandler Bong" required>
                         <button id="startButton">Let's GO!</button>
                 </div>
             </div>
@@ -59,7 +59,11 @@
         </div>
     </main>
     <footer>
-        <p>This Website was created for educational purposes</p>
+        <p class="quote">"I'll be there for YOU ..." <i class="fa-solid fa-music"></i></p>
+        <audio controls>
+            <source src="./assets/audio/The Rembrandts - I'll Be There For You.mp3" type="audio/mp3">
+            Your browser does not support the HTML5 audio tag.
+        </audio>
         <br>
         <ul id="social-media">
             <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
@@ -74,9 +78,12 @@
             </li>
         </ul>
         <br>
+        <p>This Website was created for educational purposes</p>
     </footer>
-    <script src="./assets/js/script.js"></script>
+
     <script rel="preconnect" src="https://kit.fontawesome.com/7e0df870a4.js" crossorigin="anonymous"></script>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
