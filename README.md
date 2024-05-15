@@ -3,7 +3,7 @@
 
 The Website is live now on [here](https://dianastrahilova.github.io/friends-quiz-pp2/)!
 
-![](./assets/readme-images/readme1.png)
+![](./assets/readme-images/responsive.png)
 <hr>
 
 ### Customer Requirements 
