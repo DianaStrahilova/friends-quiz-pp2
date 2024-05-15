@@ -100,6 +100,7 @@ main {
     border-radius: 30px;
     cursor: pointer;
     width: 30%;
+    color: black;
 
 }
 
@@ -155,6 +156,7 @@ input[type=text] {
     border-radius: 5px;
     min-width: 60%;
     cursor: pointer;
+    color: black;
 }
 
 audio::-webkit-media-controls-play-button,
@@ -206,6 +208,7 @@ audio::-webkit-media-controls-play-button,
     font-size: 2rem;
     cursor: pointer;
     background-color: white;
+    border: 2px solid black;
 }
 
 .optionBtn:disabled {
