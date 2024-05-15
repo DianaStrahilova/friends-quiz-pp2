@@ -8,7 +8,9 @@
     <meta name="description" content="Friends the Tv Show. Quiz. Questions.">
     <meta name="keywords" content="quiz, fiends, tv show, fun">
     <meta name="theme-color" content="purple">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Title -->
     <title>Friends The Quiz</title>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -18,15 +20,19 @@
 
 <body>
     <header>
+        <!-- Logo -->
         <h1> F<span class="red"></span>R<span class="yellow"></span>I<span class="blue"></span>E<span
                 class="red"></span>N<span class="yellow"></span>D<span class="blue"></span>S</h1>
         <h2>The Ultimate Quiz</h2>
     </header>
     <main rel="preconnect">
+        <!--Background Image -->
         <img src='./assets/images/friends.webp' id="background" alt="Friends Collage Images" width="600" height="600px">
+        <!-- Game start page -->
         <div id="game">
             <div class="home">
                 <h2>Are you READY to PLAY?</h2>
+                <!-- Modal -->
                 <button id="openModal">Instructions</button>
                 <dialog id="modal" class="instructions">
                     <button class="closeModal">&times;</button>
@@ -39,16 +45,19 @@
                         Enjoy!
                     </p>
                 </dialog>
+                <!-- User Input -->
                 <div class="userInput">
                         <label for="userName">Enter Your Name:</label>
                         <input type="text" id="userName" name="userName", placeholder="Miss Chanandler Bong">
                         <button id="startButton">Let's GO!</button>
                 </div>
             </div>
+            <!-- Questions Area -->
             <div id="gameArea" class="hidden">
                 <div id="question"></div>
                 <div id="answers"></div>
             </div>
+            <!-- Score -->
             <div id="gameEnd" class="hidden">
                 <h3 id="newHighScore" class="hidden">Awesome! New high score!</h3>
                 <h3 id="scoreText">Your Score: <span></span></h3>
@@ -59,6 +68,7 @@
             </div>
         </div>
     </main>
+    <!-- Footer -->
     <footer>
         <p class="quote">"I'll be there for YOU ..." <i class="fa-solid fa-music"></i></p>
         <audio controls>

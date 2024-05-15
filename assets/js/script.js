@@ -126,7 +126,7 @@ function startQuiz() {
 
     loadQuestion();
 }
-
+// Load the questions and hide the start area when Start Button is clicked
 function loadQuestion() {
     if (currentQuestionIndex >= questions.length) {
         gameArea.classList.add('hidden');
@@ -159,7 +159,7 @@ function loadQuestion() {
         answersElement.appendChild(button);
     });
 }
-
+// Checking the answer 
 function checkAnswer(button) {
     const answer = button.innerHTML;
     const answerIndex = questions[currentQuestionIndex].options.indexOf(answer);
@@ -184,7 +184,7 @@ function checkAnswer(button) {
             }
         });
     }
-
+    
     setTimeout (() => {
         currentQuestionIndex++;
         loadQuestion();

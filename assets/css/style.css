@@ -147,6 +147,7 @@ input[type=text] {
     font-size: 18px;
 }
 
+/* Button Styles */
 #startButton,
 #playAgain {
     font-size: 2rem;
@@ -159,31 +160,6 @@ input[type=text] {
     color: black;
 }
 
-audio::-webkit-media-controls-play-button,
-     audio::-webkit-media-controls-panel {
-     background-color: yellow;
-     color: #000;
-     }
-
-.quote {
-    font-family: 'Shadows Into Light', sans-serif;
-    font-size: 2rem;
-    padding-bottom: 1rem;
-}
-
-#social-media {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style-type: none;
-}
-
- #social-media i {
-    color: black;
-    font-size: 3rem;
-    padding: 0.5rem;
-} 
-
 #playAgain {
     margin-top: 5rem;
 }
@@ -192,7 +168,7 @@ audio::-webkit-media-controls-play-button,
 #playAgain:hover {
     opacity: 1;
 }
-
+/* Questions and options */
 #question {
     font-size: 2rem;
     padding: 2px;
@@ -225,6 +201,7 @@ audio::-webkit-media-controls-play-button,
     gap: 2rem;
 }
 
+/* Answers animation */
 .correctAnswer,
 .incorrectAnswer {
     animation-duration: 0.5s;
@@ -261,6 +238,7 @@ audio::-webkit-media-controls-play-button,
     }
 }
 
+/* Game and score */
 #gameArea {
     display: flex;
     flex-direction: column;
@@ -292,6 +270,33 @@ audio::-webkit-media-controls-play-button,
     font-weight: bold;
 }
 
+/* Footer audio and icons */
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+    background-color: yellow;
+    color: #000;
+}
+
+.quote {
+    font-family: 'Shadows Into Light', sans-serif;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+#social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#social-media i {
+    color: black;
+    font-size: 3rem;
+    padding: 0.5rem;
+}
+
+/* Media queries */
 @media only screen and (max-width: 1440px) {
     #question {
         font-size: 1.5rem;
@@ -304,6 +309,11 @@ audio::-webkit-media-controls-play-button,
 
     #gameEndText {
         margin-bottom: 1rem;
+    }
+
+    header,
+    footer {
+        width: 90%;
     }
 }
 
@@ -344,7 +354,7 @@ audio::-webkit-media-controls-play-button,
     }
 
     #game h2 {
-       padding: 0.5rem 0;
+        padding: 0.5rem 0;
     }
 
     #question {
@@ -378,22 +388,23 @@ audio::-webkit-media-controls-play-button,
 }
 
 @media only screen and (max-width: 422px) {
-   h1 {
-    font-size: 2.6rem;
-   }
+    h1 {
+        font-size: 2.6rem;
+    }
 
-   .optionBtn {
-   min-width: 90vw;
-   font-size: 1.5rem;
-   height: fit-content;
+    .optionBtn {
+        min-width: 90vw;
+        font-size: 1.8rem;
+        height: fit-content;
 
-   }
+    }
 
-   audio {
-    width: 70%;
-   }
-   .quote {
-    font-size: 1.6rem;
-   }
+    audio {
+        width: 70%;
+    }
+
+    .quote {
+        font-size: 1.6rem;
+    }
+
 }
-    
