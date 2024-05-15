@@ -1,37 +1,43 @@
 ## F.R.I.E.N.D.S The Ultimate Quiz
 ![logo](./assets/readme-images/logo.png)
 
+Frinds The Ultimate Quiz is a trivia game inspired by the so called famous tv show. 
+
 The Website is live now on [here](https://dianastrahilova.github.io/friends-quiz-pp2/)!
 
 ![](./assets/readme-images/responsive.png)
 <hr>
 
-### Customer Requirements 
+### UX
 
+#### Purpose 
+The quiz is designed to challenge the knowledge of users, containing ten fun quiestions from the show.
+After clicking on an option, the user is immediately notified if their choice was correct or incorrect by highlighting the correct/incorrect answers. The final score shows the number of correct/incorrect answers, along with a congatulating message with the user's name (optional) and an engaging 'Play Again?' button.
+
+#### Audience 
+The quiz targets anyone who has ever watched the show to test their knowledge, while also having fun.
 
 <br>
 
-### Website Visitor Expectations
+#### User Expectations
+
+The design of the website is simple, fun and engaging. The user can start the quiz straight away by entering their name(optional) and/or hitting the start button. The questions then are immediately displayed and after choosing an option, the next question loads. The user is notified of their score at the end of the quiz. 
    
 ### Website Structure
 
-   1. Easy to Explore.
+   1. Intuitive to navigate.
    2. Engaging.
    3. Inviting for action.
 
 ### Features
 ___
-**The Header:**
-  
-     
-  
-
+**The Start Area:**
   Desktop
-  ![](./assets/readme-images/desktopmenu.png)
+  ![](./assets/readme-images/main.png)
 
   Mobile 
 
-  <img src="./assets/readme-images/mobilemenu.png" width="214" height="66">
+  <img src="./assets/readme-images/mainmobile.png" width="214" height="66">
 
 
 

@@ -18,14 +18,14 @@ playAgain.addEventListener('click', () => {
 });
 startButton.addEventListener('click', () => {
     startQuiz();
-})
+});
 openModal.addEventListener('click', () => {
     modal.showModal();
-})
+});
 
 closeModal.addEventListener('click', () => {
     modal.close();
-})
+});
 
 
 

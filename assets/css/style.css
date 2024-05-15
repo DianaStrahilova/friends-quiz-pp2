@@ -359,6 +359,7 @@ audio::-webkit-media-controls-play-button,
     }
 
     .optionBtn {
+        font-size: 1.5rem;
         background-color: white;
     }
 
