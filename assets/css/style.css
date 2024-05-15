@@ -329,9 +329,11 @@ audio::-webkit-media-controls-play-button,
         background-color: transparent;
         top: 50%;
         left: 35%;
-        transform: translate(-35%, -50%); 
-        width: 75%;
-        height: 55%;
+        position: static;
+        transform: translate(0, 0);
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
     }
 
     #game h2,
@@ -350,15 +352,6 @@ audio::-webkit-media-controls-play-button,
         margin-bottom: 1rem;
     }
 
-    #game {
-        position: static;
-        transform: translate(0, 0);
-        width: 100%;
-        height: 100%;
-        padding: 1rem;
-
-    }
-
     .optionBtn {
         font-size: 1.5rem;
         background-color: white;
@@ -374,6 +367,10 @@ audio::-webkit-media-controls-play-button,
         font-family: 'Shadows Into Light', sans-serif;
     }
 
+    #gameEndText {
+        font-size: 2rem;
+    }
+
     footer p {
         font-size: 1.5rem;
     }
@@ -381,10 +378,6 @@ audio::-webkit-media-controls-play-button,
 }
 
 @media only screen and (max-width: 422px) {
-   /* body {
-    width: 100vw;
-   } */
-
    h1 {
     font-size: 2.6rem;
    }

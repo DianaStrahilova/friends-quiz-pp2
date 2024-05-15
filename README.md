@@ -12,7 +12,7 @@ The Website is live now on [here](https://dianastrahilova.github.io/friends-quiz
 
 #### Purpose 
 The quiz is designed to challenge the knowledge of users, containing ten fun quiestions from the show.
-After clicking on an option, the user is immediately notified if their choice was correct or incorrect by highlighting the correct/incorrect answers. The final score shows the number of correct/incorrect answers, along with a congatulating message with the user's name (optional) and an engaging 'Play Again?' button.
+After clicking on an option, the user is immediately notified if their choice was correct or incorrect by highlighting the correct/incorrect answers. The final score shows the number of correct/incorrect answers, along with a congatulating message with the users' name and an engaging 'Play Again?' button.
 
 #### Audience 
 The quiz targets anyone who has ever watched the show to test their knowledge, while also having fun.
@@ -21,7 +21,7 @@ The quiz targets anyone who has ever watched the show to test their knowledge, w
 
 #### User Expectations
 
-The design of the website is simple, fun and engaging. The user can start the quiz straight away by entering their name(optional) and/or hitting the start button. The questions then are immediately displayed and after choosing an option, the next question loads. The user is notified of their score at the end of the quiz. 
+The design of the website is simple, fun and engaging. The user can start the quiz straight away by entering their name and hitting the start button. The questions then are immediately displayed and after choosing an option, and if the option is wrong, the right answer highlight in green and the next question loads. The user is notified of their score at the end of the quiz. The quiz has a local storage set up and the user will also be notified if they have a new higher score.
    
 ### Website Structure
 
@@ -50,65 +50,41 @@ ___
   <img src="./assets/readme-images/footermobile.png">
 
 
+**Instructions Modal**
 
+Desktop
+![](./assets/readme-images/modaldesktop.png)
 
-  
+Mobile 
+
+<img src="./assets/readme-images/modalmobile.png" width ="344" height = "882">
+
 ___
 **Quiz Area**
 
 For each question there are 4 options to choose from. Once a choice is made, the buttons lock, preventing the user from making more choices.
 
-**Home Page**
-Desktop
-![](./assets/readme-images/desktophome1.png)
+Desktop Quiz
 
-![](./assets/readme-images/desktophome2.png)
+![](./assets/readme-images/game1.png)
+![](./assets/readme-images/game2.png)
 
-![](./assets/readme-images/desktophome3.png)
+Mobile Quiz 
 
-
-Mobile 
-
-<img src="./assets/readme-images/homemobile1.png" height="653" width="280">
-<img src="./assets/readme-images/homemobile2.png" height="653" width="280">
-<img src="./assets/readme-images/homemobile3.png" height="400" width="280">
+<img src="./assets/readme-images/gamemobile.png">
 
 
-**About Page**
+**Score**
 
-Desktop
-![](./assets/readme-images/aboutdesktop1.png)
+The score is displayed at the end of the game and displays a message with the users's name the number of correct and incorrect answers. Also alerts if there is a new high score.
 
-![](./assets/readme-images/aboutdesktop2.png)
+Desktop score 
 
-Mobile 
+![](./assets/readme-images/scoredesktop.png)
 
-<img src="./assets/readme-images/aboutmobile1.png" height="653" width="280">
-<img src="./assets/readme-images/aboutmobile2.png" height="653" width="280">
-<img src="./assets/readme-images/aboutmobile3.png" height="653" width="280">
-<img src="./assets/readme-images/aboutmobile4.png" height="653" width="280">
+<img src="./assets/readme-images/scoremobile.png" width = "344" height = "882">
 
 
-**Sign Up Page**
-
-Desktop 
-![](./assets/readme-images/signupdesktop.png)
-
-Mobile 
-
-<img src="./assets/readme-images/signupmobile.png" height="653" width="280">
-
-___
-**The Footer**
-
-The Footer is also repeated across all pages. It includes social media links.
-
-Desktop
-![](./assets/readme-images/footerdesktop.png)
-
-Mobile
-
-<img src="./assets/readme-images/footermobile.png" height="95" width="280">
 
 ---
 **Testing**
