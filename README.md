@@ -1,112 +1,172 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## F.R.I.E.N.D.S The Ultimate Quiz
+![logo](./assets/readme-images/logo.png)
 
-Welcome USER_NAME,
+The Website is live now on [here](https://dianastrahilova.github.io/friends-quiz-pp2/)!
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![](./assets/readme-images/readme1.png)
+<hr>
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **April 26, 2024**
+### Customer Requirements 
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<br>
 
-`python3 -m http.server`
+### Website Visitor Expectations
+   
+### Website Structure
 
-A blue button should appear to click: _Make Public_,
+   1. Easy to Explore.
+   2. Engaging.
+   3. Inviting for action.
 
-Another blue button should appear to click: _Open Browser_.
+### Features
+___
+**The Header:**
+  
+     
+  
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+  Desktop
+  ![](./assets/readme-images/desktopmenu.png)
 
-A blue button should appear to click: _Make Public_,
+  Mobile 
 
-Another blue button should appear to click: _Open Browser_.
+  <img src="./assets/readme-images/mobilemenu.png" width="214" height="66">
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+  
+___
+**Main Content**
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+The main combines engaging information and invites for action.
 
-------
+The first part of the main is a welcome message inviting visitors to join into the unknown. Along with all the reasons why and captivating images and a map location of  the office.
 
-## Release History
+The second part is About. It contents more detailed information about the expedition. What to expect and what it includes. Followed by more images.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+The third part is a Sign Up and a Medical information form, inviting the visitor to take action and join the expedition. 
 
-**April 26 2024:** Update node version to 16
+**Home Page**
+Desktop
+![](./assets/readme-images/desktophome1.png)
 
-**September 20 2023:** Update Python version to 3.9.17.
+![](./assets/readme-images/desktophome2.png)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![](./assets/readme-images/desktophome3.png)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+Mobile 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+<img src="./assets/readme-images/homemobile1.png" height="653" width="280">
+<img src="./assets/readme-images/homemobile2.png" height="653" width="280">
+<img src="./assets/readme-images/homemobile3.png" height="400" width="280">
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+**About Page**
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Desktop
+![](./assets/readme-images/aboutdesktop1.png)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![](./assets/readme-images/aboutdesktop2.png)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+Mobile 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+<img src="./assets/readme-images/aboutmobile1.png" height="653" width="280">
+<img src="./assets/readme-images/aboutmobile2.png" height="653" width="280">
+<img src="./assets/readme-images/aboutmobile3.png" height="653" width="280">
+<img src="./assets/readme-images/aboutmobile4.png" height="653" width="280">
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+**Sign Up Page**
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Desktop 
+![](./assets/readme-images/signupdesktop.png)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Mobile 
 
-------
+<img src="./assets/readme-images/signupmobile.png" height="653" width="280">
 
-## FAQ about the uptime script
+___
+**The Footer**
 
-**Why have you added this script?**
+The Footer is also repeated across all pages. It includes social media links.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+Desktop
+![](./assets/readme-images/footerdesktop.png)
 
-**How will this affect me?**
+Mobile
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+<img src="./assets/readme-images/footermobile.png" height="95" width="280">
 
 ---
+**Testing**
 
-Happy coding!
+- Website was tested and works in different browsers.
+- The website is also responsive to all smaller devices, looks and functions good.
+- The sign up form works and requires entries in every field.
+
+
+**Validator Testing**
+
+- HTML
+   - No errors were returned when passing through the official [W3C Validator.](https://validator.w3.org/)
+
+index.html
+![](./assets/readme-images/homev.png)
+
+about.html
+![](./assets/readme-images/aboutv.png)
+
+signup.html
+![](./assets/readme-images/signupv.png)
+
+- CSS
+  - No errors were found when passing throught the official [(Jigsaw) Validator](https://jigsaw.w3.org/css-validator/)
+style.css
+![](./assets/readme-images/cssv.png)
+
+- Accesibility 
+   - Colors and fonts are easy to read and accesible by running it through Lighthouse in Devtools device toolbar.
+
+Home Page 
+![](./assets/readme-images/homel.png)
+
+About Page 
+![](./assets/readme-images/aboutl.png)
+
+Sign Up 
+![](./assets/readme-images/signupl.png)
+
+
+
+---
+### Deployment
+The website was deployed to GitHub Pages. The steps are as follows.
+   1. In the GitHub Repository go to Settings tab.
+   2. Under Code and Automation, go to Pages.
+   3. From the source section drop-down menu, select the Main Branch.
+   4. Select save.
+   5. Wait a couple of minutes for the website to go live.
+
+ Link to the live website [here](https://dianastrahilova.github.io/moonexpeditionpp1/index.html)
+---
+
+### Reference and Credits 
+**References**
+
+   1. Code Institute Learning Modules.
+   2. [Flexbox Froggy](https://flexboxfroggy.com/)
+   3. The header and navbar menu was insipired by [Love Running Project](https://code-institute-org.github.io/love-running-2.0/index.html)
+   4. More CSS exercises [W3schools](https://www.w3schools.com/)
+<br>
+
+### Content and Media
+The content and media were taken from the followig resources:
+   - Five out of the six images were AI generated from [Wowzer](https://app.wowzer.ai/).
+   - The text content was created by [ChatGpt](https://chat.openai.com/), following my instructions.
+   - Image of Moon's surface with Earth in the distance was downloaded from [Pexels](https://www.pexels.com/).
+   - The Social Media Icons and the Triple Bar icon were downloaded from [Font Awesome](https://fontawesome.com/).
+   - Google Fonts was used to define the fonts in the stylesheet. [Google Fonts](https://fonts.google.com/).
+   - Colors used were simple black, white, purple and grey.
+   - Favicon was AI generated from [Wowzer](https://app.wowzer.ai/) and converted into a Favicon with [Favicon Generator](https://favicon.io/favicon-converter/).

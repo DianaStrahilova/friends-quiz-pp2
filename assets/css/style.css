@@ -82,7 +82,7 @@ main {
     left: 45%;
     transform: translate(-44%, -50%);
     width: 60%;
-    height: 70%;
+    height: 73%;
     background-color: rgba(219, 219, 247, 0.8);
 }
 
@@ -331,7 +331,6 @@ audio::-webkit-media-controls-play-button,
         transform: translate(-35%, -50%); 
         width: 75%;
         height: 55%;
-        margin-left: ;
     }
 
     #game h2,
